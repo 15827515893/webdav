@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: tcp
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    pass:
+    database: 0
+    maxIdle: 300
+    maxWait: 3000
+    testOnBorrow: true
+
+
+# 是否打开swagger
+swagger: 
+  enable: true
+
+# cim 服务器端口
+chat:
+  server:
+    port: 11211
+    heartbeat-time: 10
+logging:
+  level:
+    root: info
+
+# 关闭健康检查权限
+#management:
+#  security:
+#    enabled: false
+
+
+# 是否注册 zk
+app:
+  zk:
+    switch: true
+    addr: 127.0.0.1:2181
+    connect-timeout: 5000
+# zk 注册根节点
+    root: /route
