@@ -11,9 +11,10 @@
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  本地启动redis  本地启动zk
+2.  配置idea edit configuration    programargument参数设置： --spring.profiles.active=run1   设置三个 run1  run2 run3
+3.  右上角启动多个服务器   run1  run2 run3
+4.  main方式先后启动   ebsocketclient   WebsocketClient2
 
 #### 使用说明
 
